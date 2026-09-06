@@ -43,7 +43,7 @@ class CombatInstructorDialogue(player: Player? = null) : Dialogue(player) {
 
         if (tutStage in 54..60 && arrowCount < 50) {
             addItem(player, Items.BRONZE_ARROW_882, 50 - arrowCount)
-            sendItemDialogue(player, Items.BRONZE_ARROW_882, "The Combat Guide gives you some <col=08088A>bronze arrows</col>.")
+            sendItemDialogue(player, 897, "The Combat Guide gives you some <col=08088A>bronze arrows</col>.")
             return true
         }
 
